@@ -26,3 +26,14 @@ Open Terminal in vscode
 
 Initialze python virtual environment in project folder `uv init` or `uv sync`
 
+
+## Windows specifics
+
+
+Install uv `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+
+Install python 3.14 if you have not installed already
+
+`uv python install 3.14`
+
+Then in vscode terminal, in the project folder `uv sync`
