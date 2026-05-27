@@ -33,7 +33,7 @@ def buy_stocks(symbol: str, quantity: int, total_price: float) -> str:
 
 tools = [get_stock_price, buy_stocks]
 
-llm = init_chat_model("google_genai:gemini-2.0-flash")
+llm = init_chat_model("google_genai:gemini-2.5-flash")
 llm_with_tools = llm.bind_tools(tools)
 
 def chatbot_node(state: State):
